@@ -23,7 +23,7 @@ function Printdata(){
     var pagedata ="";
     var i;
     for (i=0; i<MyNotes.length; i++){
-        pagedata+= "<li>" + MyNotes[i].title + "  |  " + MyNotes[i].content + "</li>"
+        pagedata+= "<li> Title: " + MyNotes[i].title + "  |  Note: " + MyNotes[i].content + "</li>"
     }
 
     document.getElementById("result").innerHTML = pagedata;
