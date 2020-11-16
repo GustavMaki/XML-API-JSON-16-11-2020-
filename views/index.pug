@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(style="background-color:#E6FFFF; Padding:1%; border-radius:15px;")
+    h1= "JSON Notes"
+    p Welcome to JSON Notes
 
-  p(id="result")
-  
+    button(id="printButton", style="Border:none; Padding:2%; border-radius:15px;") Print Notes
+
+    p(id="result")
+
   script(src="/javascripts/json.js")
-  script(src="/javascripts/api.js")
+  //script(src="/javascripts/api.js")
